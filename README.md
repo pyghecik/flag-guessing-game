@@ -4,3 +4,5 @@
  - React.js
  - Next.js
  - Tailwindcss 
+ # Try it yourself
+ https://pyghecik.github.io/flag-guessing-game/

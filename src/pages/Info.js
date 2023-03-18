@@ -3,6 +3,23 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
+  // State
+  const [isGreen, setGreen] = useState(false);
+  // State End
+
+  // Button Styles
+  const buttonGreen =
+    " bg-background-green border-2 border-border-green text-border-green rounded-md w-56 h-12 transition ease-in-out duration-300";
+  const buttonGray =
+    " bg-background-gray border-2 border-border-gray text-border-gray rounded-md w-56 h-12 transition ease-in-out duration-300";
+  // Button Styles End
+
+  // Functions
+  function setButtonStyle() {
+    if (isGreen) setGreen(false);
+    else setGreen(true);
+  }
+  // Functions End
   return (
     <>
       <Head>
@@ -20,9 +37,9 @@ export default function Home() {
             <button
               onMouseOver={setButtonStyle}
               onMouseLeave={setButtonStyle}
-              className={isGreen ? buttonStylingGreen : buttonStylingGray}
+              className={isGreen ? buttonGreen : buttonGray}
             >
-              Restart
+              Okay
             </button>
           </Link>
         </div>

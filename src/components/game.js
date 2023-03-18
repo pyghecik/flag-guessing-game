@@ -107,7 +107,11 @@ function Game(props) {
   if (flagsShowed !== 10) {
     return (
       <div className=" grid place-content-center text-center mt-32">
-        <img src={flagImage} className=" m-10 h-96 w-[44rem] rounded-lg "></img>
+        <img
+          src={flagImage}
+          alt="Image of Flag"
+          className=" m-10 h-96 w-[44rem] rounded-lg "
+        ></img>
         <h1 className=" opacity-10 mb-3">What country is this flag!</h1>
         <div className=" mt-4">
           {countries.map((country) => {

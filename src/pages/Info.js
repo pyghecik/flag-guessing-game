@@ -3,9 +3,22 @@ import Head from "next/head";
 
 export default function Home() {
   // Functions
-  setTimeout(() => {
-    window.location.replace("/Gaming");
-  }, 2000);
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      setTimeout(() => {
+        window.location.replace(
+          "https://pyghecik.github.io/flag-guessing-game/Gaming"
+        );
+      }, 5000);
+    };
+    return () => {
+      setTimeout(() => {
+        window.location.replace(
+          "https://pyghecik.github.io/flag-guessing-game/Gaming"
+        );
+      }, 5000);
+    };
+  }, []);
   // Functions End
   return (
     <>

@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <main>
         <div className=" text-center mt-96">
-          <h1 className=" opacity-10 mb-3">[Guess the flag game]</h1>
+          <h1 className=" opacity-20 mb-3">[Guess the flag game]</h1>
           <Link href="/Info">
             <button
               onMouseOver={setButtonStyle}

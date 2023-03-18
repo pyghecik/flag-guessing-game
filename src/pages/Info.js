@@ -1,25 +1,8 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
-  // Functions
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      setTimeout(() => {
-        window.location.replace(
-          "https://pyghecik.github.io/flag-guessing-game/Gaming"
-        );
-      }, 5000);
-    };
-    return () => {
-      setTimeout(() => {
-        window.location.replace(
-          "https://pyghecik.github.io/flag-guessing-game/Gaming"
-        );
-      }, 5000);
-    };
-  }, []);
-  // Functions End
   return (
     <>
       <Head>
@@ -33,6 +16,15 @@ export default function Home() {
           <h1 className=" text-5xl animate-bounce opacity-20">
             [Choose from 3 options what Country showed flag belongs to!]
           </h1>
+          <Link href="/Game">
+            <button
+              onMouseOver={setButtonStyle}
+              onMouseLeave={setButtonStyle}
+              className={isGreen ? buttonStylingGreen : buttonStylingGray}
+            >
+              Restart
+            </button>
+          </Link>
         </div>
       </main>
     </>

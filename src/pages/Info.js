@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -9,9 +9,9 @@ export default function Home() {
 
   // Button Styles
   const buttonGreen =
-    " bg-background-green border-2 border-border-green text-border-green rounded-md w-56 h-12 transition ease-in-out duration-300";
+    " bg-background-green border-2 border-border-green text-border-green rounded-md mt-10 w-56 h-12 transition ease-in-out duration-300 opacity-80";
   const buttonGray =
-    " bg-background-gray border-2 border-border-gray text-border-gray rounded-md w-56 h-12 transition ease-in-out duration-300";
+    " bg-background-gray border-2 border-border-gray text-border-gray rounded-md mt-10 w-56 h-12 transition ease-in-out duration-300 opacity-30";
   // Button Styles End
 
   // Functions
@@ -30,8 +30,8 @@ export default function Home() {
       </Head>
       <main>
         <div className=" grid place-content-center text-center mt-96">
-          <h1 className=" text-5xl animate-bounce opacity-20">
-            [Choose from 3 options what Country showed flag belongs to!]
+          <h1 className=" text-5xl text-border-gray opacity-30">
+            Choose from 3 options what Country showed flag belongs to!
           </h1>
           <Link href="/Game">
             <button

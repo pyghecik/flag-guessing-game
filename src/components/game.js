@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 
-function Game(props) {
+function Game() {
   // UseState
   const [countries, setCountries] = useState([]);
   const [correctOption, setCorrectOption] = useState([]);

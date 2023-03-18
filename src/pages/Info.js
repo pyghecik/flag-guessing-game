@@ -3,18 +3,9 @@ import Head from "next/head";
 
 export default function Home() {
   // Functions
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      setTimeout(() => {
-        window.location.replace("/Gaming");
-      }, 5000);
-    };
-    return () => {
-      setTimeout(() => {
-        window.location.replace("/Gaming");
-      }, 5000);
-    };
-  }, []);
+  setTimeout(() => {
+    window.location.replace("/Gaming");
+  }, 2000);
   // Functions End
   return (
     <>

@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <main>
         <div className=" grid place-content-center text-center mt-96">
-          <h1 className=" text-5xl animate-bounce opacity-10">
+          <h1 className=" text-5xl animate-bounce opacity-20">
             [Choose from 3 options what Country showed flag belongs to!]
           </h1>
         </div>
